@@ -1,0 +1,16 @@
+// mod.mpp
+// Moduldeklaration des Moduls "mod"
+export module mod;
+import <iostream>;
+
+// Modulinterface der Funktion "foo()"
+export void foo();
+
+// Privates Modulfragment
+module :private;
+
+// Private Implementierungsdetails für "foo()"
+void foo()
+{
+    std::cout << "Hello World!" << std::endl;
+}

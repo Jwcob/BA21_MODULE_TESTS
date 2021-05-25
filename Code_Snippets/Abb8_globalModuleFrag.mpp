@@ -1,0 +1,16 @@
+// myModule.mpp
+module; //Compiler wird verständigt, dass ein Modul folgt
+
+//Beginn des globalen Modulfragments
+
+//Präprozessor Anweisungen
+#include <iostream>
+#define foo "WORLD"
+
+//Ende des globalen Modulfragments
+
+export module myModule; //Moduldeklaration
+export printHello()
+{
+    std::cout << "HELLO " << foo << std::endl;
+}

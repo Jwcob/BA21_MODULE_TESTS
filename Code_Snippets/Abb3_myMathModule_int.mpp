@@ -1,0 +1,5 @@
+// myMathModule.mpp
+// Modulinterface
+export module myMathModule;
+export int add();
+export int subtract();

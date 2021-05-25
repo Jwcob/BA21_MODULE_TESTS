@@ -1,0 +1,17 @@
+// mod.mpp
+export module mod;
+
+export int add(int x, int y)
+{
+    return x + y;
+}
+
+//main.cpp
+import mod;
+import <iostream>;
+
+int main()
+{
+    //add aus Modul mod ist sichtbar für main
+    std::cout << add(1, 1) << std::endl;
+}

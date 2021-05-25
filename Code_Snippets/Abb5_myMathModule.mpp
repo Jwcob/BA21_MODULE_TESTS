@@ -1,0 +1,4 @@
+// myMathModule.mpp
+export module myMathModule;
+export import myMathModule.add;
+export import myMathModule.subtract;
